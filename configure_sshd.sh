@@ -2,7 +2,7 @@
 cp /etc/apt/sources.list /etc/apt/sources.list.bak
 sed -i 's/deb.debian.org/mirrors.tuna.tsinghua.edu.cn/' /etc/apt/sources.list
 
-apt install wget openssh-server screen -y
+apt update && apt install wget openssh-server screen -y
 sed -i 's/#Port 22/Port 2233/' /etc/ssh/sshd_config
 /usr/sbin/sshd
 
