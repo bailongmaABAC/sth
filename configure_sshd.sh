@@ -23,5 +23,5 @@ local_ip = 127.0.0.1
 local_port = 2233
 remote_port = 11362
 " > frpc.ini
-screen -dmS frpc cd $HOME/frp_0.61.0_linux_arm64 && ./frpc
+screen -dmS frpc "cd $HOME/frp_0.61.0_linux_arm64 && ./frpc"
 echo "配置完成"
